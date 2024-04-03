@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Smit Vaghasiya</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+
+        <div class="logo">Smit Vaghasiya</div>
+        <div id="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+
+    </nav>
+    <section id="profile">
+        <div class="section_pic_container">
+            <img src="./assets/profile_pic.jpg" alt="profile_pic">
+        </div>
+
+        <div class="section_text">
+            <p class="section_text_p1">Hello I'm</p>
+            <h1 class="title">Smit Vaghasiya</h1>
+            <p class="section_text_p2">A Frontend Developer</p>
+            <div class="btn_container">
+                    <button class="btn btn_color_2">Download CV</button>
+                
+                <button class="btn btn_color_1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div class="social_container">
+                <img src="./assets/linkedin.png" alt="Linked" class="icon"
+                    onclick="location.href='https:www.linkedin.com/in/smit-vaghasiya-368659245'">
+                <img src="./assets/github.png" class="icon" alt="GitHub"
+                    onclick="location.href='https:github.com/SmitVaghasiya24'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">
+            Get To Know More
+        </p>
+        <h1 class="title">About Me</h1>
+        <div class="section_container">
+            <div class="section_picture_container">
+                <img src="./assets/about_pic.jpg" alt="about pic" class="about_pic">
+            </div>
+            <div class="about_detail_container">
+                <div class="about_container">
+                    <div class="details_container">
+                        <img src="./assets/experience.png" alt="experience imege" class="icon">
+                        <h3>Experience</h3>
+                        <p>Fresher <br>Frontend Developer</p>
+                    </div>
+                    <div class="details_container">
+                        <img src="./assets/education.png" alt="education imege" class="icon">
+                        <h3>Education</h3>
+                        <p>B.Tech - Computer Science & Engineering (2021-2025)</p>
+                    </div>
+                </div>
+                <div class="text_container">
+                    <h3>About</h3>
+                    <p>
+                        An energetic and passionate student pursuing B.Tech, Having good knowledge in, HTML, CSS,
+                        JavaScript, React, and Tailwind Css. I aim to use the knowledge I have acquired from my
+                        coursework and self-study to make projects that can solve real-world problems and help society
+                        live an easy and smart life.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#skills'">
+    </section>
+    <section id="skills">
+        <p class="section_text_p1">
+            Explore My
+        </p>
+        <h1 class="title">Skills</h1>
+        <div class="skills_detail_container">
+            <div class="about_container">
+                <div class="details_container">
+                    <h2 class="skills_sub_title">
+                        Frontend Development
+                    </h2>
+                    <div class="article_container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h3>BootStrap</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h3>React</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article> 
+                    </div>
+                </div>
+                <div class="details_container">
+                    <h2 class="skills_sub_title">
+                        BackEnd Development
+                    </h2>
+                    <div class="article_container">
+                        
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h3>Node JS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h3>Express JS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#project'">
+    </section>
+    <section id="project">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="skills_detail_container">
+            <div class="about_container">
+                <div class="details_container color container">
+                    <div class="article_container">
+                        <img src="./assets/project-1.jpg" alt="project 1" class="project_img">
+                    </div>
+                    <h2 class="skills_sub_title project_title">Clothes Shop</h2>
+                    <div class="btn_container">
+                        <button class="btn btn_color_2 project_btn" > 
+                            Github
+                        </button>
+                        <button class="btn btn_color_2 project_btn" onclick="location.href='#project'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details_container color container">
+                    <div class="article_container">
+                        <img src="./assets/project-2.png" alt="project 2" class="project_img">
+                    </div>
+                    <h2 class="skills_sub_title project_title">Spotify Clone</h2>
+                    <div class="btn_container">
+                        <button class="btn btn_color_2 project_btn">
+                            Github
+                        </button>
+                        <button class="btn btn_color_2 project_btn" onclick="location.href='#project'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details_container color container">
+                    <div class="article_container">
+                        <img src="./assets/project-3.png" alt="project 3" class="project_img">
+                    </div>
+                    <h2 class="skills_sub_title project_title">Simon Says</h2>
+                    <div class="btn_container">
+                        <button class="btn btn_color_2 project_btn">
+                            Github
+                        </button>
+                        <button class="btn btn_color_2 project_btn" onclick="location.href='#project'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">
+            Get in Touch
+        </p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact_info_upper_container">
+            <div class="contact_info_container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact_icon email_icon">
+             <p><a href="mailto:arifansari.work@gmail.com">smitvaghasiya.work@gmail.com</a></p>
+            </div>
+            <div class="contact_info_container">
+                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact_icon">
+             <p><a href="https:www.linkedin.com/in/smit-vaghasiya-368659245">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav_links_container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Smit Vaghasiya . All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
